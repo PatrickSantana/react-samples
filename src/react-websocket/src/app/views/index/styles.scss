@@ -1,0 +1,148 @@
+$headerTransition: 0.5s;
+$Color: #010819;
+$Color_b: #4df0fd;
+$Color: #33a1d5;
+$logo_textColor: #4df0fd; //#fff6a9;
+$logo_textShadowA: #4df0fd; // #ffa500;
+$logo_textShadowB: #ff0000; //#ff0000;
+$logo_textShadowC: #010819; // #ff8d00;
+@import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
+
+// $image: url("./../../../assets/img/image-1.jpg"); // #ff8d00;
+:host {}
+
+
+.index-page {
+
+  width: 100%;
+  height: 100%;
+
+  background-color: #000;
+
+
+  .box {
+    width: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    //box-shadow: 0 0 50px 5px rgb(0 0 0 / 30%), 0 0 5px -1px white;
+    padding: 2.5em 1.5em;
+    border-radius: 5px;
+    //text-align: center;
+    // mix-blend-mode: normal;
+    //isolation: isolate;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+  }
+
+  .title {
+    
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+  }
+  .text {
+    color: #fff;
+    text-align: center;
+  }
+
+  .background {
+    width: 500px;
+    height: 500px;
+  
+    background-color: #ff0000;
+  
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    margin: 0;
+    font-size: 6px;
+    line-height: 8px;
+    // background: url($image);
+
+    // background: url('~@assets/img/image-1.jpg');
+    // background-image: url('~@assets/img/image-1.jpg');
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, .0);
+    pointer-events: none;
+    // z-index: -1;
+  
+    //transition: 1s;
+  }
+  
+
+  .title {
+      //font-size: calc(20px + 18vh);
+      font-size: 2.5em;
+      //   line-height: calc(20px + 20vh);
+      text-shadow: 0 0 5px $logo_textShadowA, 0 0 15px $logo_textShadowA, 0 0 20px $logo_textShadowA, 0 0 40px $logo_textShadowA, 0 0 60px $logo_textShadowB, 0 0 10px $logo_textShadowC, 0 0 98px $logo_textShadowB;
+      color: $logo_textColor;
+      font-family: "Sacramento", cursive;
+      text-align: center;
+      animation: blink 12s infinite;
+      -webkit-animation: blink 12s infinite;
+  }
+  
+  @-webkit-keyframes blink {
+      20%,
+      24%,
+      55% {
+          color: #111; text-shadow: none;
+      }
+      0%,
+      19%,
+      21%,
+      23%,
+      25%,
+      54%,
+      56%,
+      100% {
+          text-shadow: 0 0 5px $logo_textShadowA, 
+          0 0 15px $logo_textShadowA, 
+          0 0 20px $logo_textShadowA, 
+          0 0 40px $logo_textShadowA, 
+          0 0 60px $logo_textShadowB, 
+          0 0 10px $logo_textShadowC, 
+          0 0 98px $logo_textShadowB;
+          color: $logo_textColor;
+      }
+  }
+  
+  @keyframes blink {
+      20%,
+      24%,
+      55% { 
+        color: #111; text-shadow: none;
+      }
+      0%,
+      19%,
+      21%,
+      23%,
+      25%,
+      54%,
+      56%,
+      100% {
+          text-shadow: 0 0 5px $logo_textShadowA, 
+          0 0 15px $logo_textShadowA, 
+          0 0 20px $logo_textShadowA, 
+          0 0 40px $logo_textShadowA, 
+          0 0 60px $logo_textShadowB, 
+          0 0 10px $logo_textShadowC, 
+          0 0 98px $logo_textShadowB;
+          color: $logo_textColor;
+      }
+  }
+  
+
+}
+
+
