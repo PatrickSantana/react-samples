@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "noImplicitAny": true,
+    "module": "es6",
+    "target": "es5",
+    "baseUrl": "./",
+    "jsx": "react",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "@components/*": ["./src/app/core/components/*"],
+      "@context/*": ["./src/app/core/context/*"],
+      "@hooks/*": ["./src/app/core/hooks/*"],
+      "@routes/*": ["src/app/routes/*"],
+      "@styles/*": ["./src/app/core/styles/*"],
+      "@models/*": ["./src/app/core/models/*"],
+      "@utils/*": ["./src/app/core/utils/*"],
+      "@views/*": ["./src/app/views/*"],
+      "@services/*": ["./src/app/services/*"],
+      "@environments/*": ["./src/environments/*"],
+      "@assets/*": ["./src/assets/*"],
+    }
+  }
+}
