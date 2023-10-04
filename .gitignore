@@ -640,3 +640,6 @@ FodyWeavers.xsd
 
 **/environment.dev.js
 **/environment.prod.js
+
+**/environment.dev.ts
+**/environment.prod.ts
